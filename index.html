@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>#dailyCSSImages</title>
+</head>
+
+<body>
+<!--Link to go over Finished product for useful resources
+<a href="https://platform.html5.org/">-->
+
+<!--Soon-to-be Invisible Border-->
+<div class="box">
+  
+<!--Image Outline-->
+<div class="top-border"></div>
+<div class="left-border-top"></div>
+<div class="right-border-top"></div>
+<div class="left-angle-cover"></div>
+<div class="right-angle-cover"></div>
+<div class="left-Bkgrnd-bottom"></div>
+<div class="right-Bkgrnd-bottom"></div>
+<div class="left-Bkgrnd-side"></div>
+<div class="right-Bkgrnd-side"></div>
+  
+<!--Inner Symbol-->
+<div class="top-5-right"></div>
+<div class="top-5-left"></div>
+<div class="lower-left-side-5"></div>
+<div class="middle-5"></div>
+<div class="lower-right-side-5"></div>
+<div class="bottom-5-right"></div>
+<div class="bottom-5-left"></div>
+
+<!--Inner Image background-->
+<div class="left-Bkgrnd"></div>
+<div class="right-Bkgrnd"></div>
+  
+</a>
+</div>
+
+<style>
+/*Variables*/
+$background-color: #fff;
+$soon-to-be-invisible-border: solid 2px #000;
+$starting-point: 5%;
+$opacityq: 0.7;
+$opacity: 0.5;
+$opacityz:0.2;
+
+/*Generic*/
+body{
+background: #fff;
+}
+
+div { position: relative; }
+div div { position: absolute; 
+width: 100%;
+height: 100%;
+}
+
+/*Meat N' Potatoes*/
+/*Invisible Border*/
+.box {
+box-sizing: border-box;
+positon: relative;
+display: block;
+margin: auto;
+margin-top: 5%;
+
+width: 300px;
+height: 300px;
+  
+background: #fff;
+  
+border: solid 2px #000;
+
+/*Bkgrnd Img to trace*/
+background-image: url(https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png);
+background-size: 100%;
+background-repeat: no-repeat;
+
+/*Not really needed*/
+z-index: 0;
+}
+
+
+/*Inner Symbol*/
+.top-5-right {
+  display: flex;
+  margin: 35% 34%;
+  height: 8%;
+  width: 37%;
+  background: white;
+  z-index: 4;
+  transform: skewX(-5deg);
+  opacity: 100%;
+}
+
+.top-5-left {
+  margin: 35% 31%;
+  height: 25%;
+  width: 8%;
+  background: white;
+  z-index: 4;
+  transform: skewX(5deg);
+  opacity: 100%;
+}
+
+.lower-left-side-5 {
+  margin: 64% 33%;
+  height: 13%;
+  width: 8%;
+  background: white;
+  z-index: 4;
+  transform: skewX(5deg);
+  opacity: 100%;
+}
+
+.middle-5 {
+  display: flex;
+  margin: 52% 32.5%;
+  height: 8.5%;
+  width: 34%;
+  background: white;
+  z-index: 4;
+  opacity: 100%;
+}
+
+.lower-right-side-5 {
+  margin: 52% 61%;
+  height: 24%;
+  width: 8%;
+  background: white;
+  z-index: 4;
+  transform: skewX(-5deg);
+  opacity: 100%;
+}
+
+.bottom-5-right {
+  margin: 71% 51%;
+  width: 17%;
+  height: 8%;
+  background: white;
+  z-index: 4;
+  transform:skewY(-15deg);
+  opacity: 100%;
+}
+
+.bottom-5-left {
+  margin: 71% 33.8%;
+  width: 17.2%;
+  height: 8%;
+  background: white;
+  z-index: 4;
+  transform:skewY(15deg);
+  opacity: 100%;
+}
+
+
+/*Image Outline*/
+.top-border {  
+  display: flex;
+  margin: 17% 15%;
+  height: 6%;
+  width: 71%;
+  background: white;
+  z-index: 3;
+  opacity: 100%;
+}
+
+
+ .left-border-top {  
+  display: flex;
+  margin: 22% 18%;
+  height: 6%;
+  width: 33%;
+  background: #e34c26;
+  z-index: 2;
+  transform: skewX(5deg);
+  opacity: 100%;
+}
+/*Image Outline*/
+.right-border-top {
+  display: flex;
+  margin: 22% 50%;
+  height: 6%;
+  width: 33%;
+  background: #e34c26;
+  z-index: 2;
+  transform: skewX(-5deg);
+  opacity: 100%;
+}
+
+.left-angle-cover{
+  margin: 18% 12%;
+  height: 72%;
+  width: 8%;
+  background: white;
+  z-index: 3;
+  transform:skewX(5deg);
+  opacity: 100%;
+}
+
+.right-angle-cover{
+  margin: 18% 80%;
+  height: 72%;
+  width: 8%;
+  background: white;
+  z-index: 3;
+  transform: skewX(-5deg);
+  opacity: 100%;
+}
+
+.left-Bkgrnd-bottom{
+  margin: 85% 17%;
+  height: 7%;
+  width: 33.2%;
+  background: #e34c26;
+  z-index: 2;
+  transform:skewY(15deg);
+  opacity: 100%;
+}
+
+.right-Bkgrnd-bottom{
+  margin: 85% 50%;
+  height: 7%;
+  width: 33%;
+  background: #e34c26;
+  z-index: 2;
+  transform:skewY(-15deg);
+  opacity: 100%;
+}
+
+.left-Bkgrnd-side{
+  margin: 18% 18%;
+  height: 70%;
+  width: 8%;
+  background: #e34c26;
+  z-index: 2;
+  transform: skewX(5deg);
+  opacity: 100%;
+}
+
+.right-Bkgrnd-side{
+  margin: 18% 74%;
+  height: 70%;
+  width: 8%;
+  background: #e34c26;
+  z-index: 2;
+  transform: skewX(-5deg);
+  opacity: 0.5%;
+}
+
+
+/*Inner Image background*/
+.left-Bkgrnd{
+  margin: 22% 17%;
+  height: 68%;
+  width: 33%;
+  background: #e34c26;
+  z-index: 1;
+  transform:skewY(15deg);
+  opacity: 100%;
+}
+
+.right-Bkgrnd{
+  margin: 22% 49.8%;
+  height: 68%;
+  width: 33%;
+  background: #f06529;
+  z-index: 1;
+  transform:skewY(-15deg);
+  /*transform:matrix(0,2,.5,.14,0,-.2);*/
+  opacity: 100%;
+}
+</style>
+</body>
